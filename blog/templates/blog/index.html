@@ -1,0 +1,11 @@
+{% extends 'blog/base_blog.html'%}
+
+{% block title %} Site {% endblock %}
+
+{% block author %} Maxersh {% endblock %}
+
+{% block content %}
+  <h1>Hello world</h1>
+  <h2>Hello ,{% for name in names %}{{ name }} {% endfor %}</h2>
+  <h3>H3</h3>
+{% endblock %}
