@@ -6,4 +6,7 @@ def posts_list(request):
     context = {
         'names': names
     }
-    return render(request, 'blog/index.html', context=context)
+    return render(request, 'blog/blog.html', context=context)
+
+def main_page(request):
+    return render(request, 'blog/index.html')
